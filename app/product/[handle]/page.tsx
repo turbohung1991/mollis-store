@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { getProductByHandle } from '@/data/products';
+import { getProductByHandle, getAllProducts } from '@/data/products';
 import { formatPriceCny } from '@/lib/utils';
 import { AddToCartButton } from '@/components/add-to-cart-button';
 import { ProductCard } from '@/components/product-card';
@@ -13,6 +13,13 @@ interface ProductPageProps {
   };
 }
 
+export async function generateStaticParams() {
+  const products = getAllProducts();
+  return products.map((product) => ({
+    handle: product.handle,
+  }));
+}
+
 export async function generateMetadata({ params }: ProductPageProps) {
   const product = getProductByHandle(params.handle);
   
@@ -23,7 +30,7 @@ export async function generateMetadata({ params }: ProductPageProps) {
   }
 
   return {
-    title: `${product.title} - CareComfort`,
+    title: `${product.title} - Mollis`,
     description: product.description,
   };
 }

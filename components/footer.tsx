@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Heart, Mail, Phone, MapPin } from 'lucide-react';
+import { Heart, Mail, Phone, MapPin, Building2 } from 'lucide-react';
 
 const footerLinks = {
   products: [
@@ -41,16 +41,24 @@ export function Footer() {
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm text-gray-600">
-                <Mail className="w-4 h-4 text-pink-500" />
-                <span>support@mollis.com</span>
+                <Building2 className="w-4 h-4 text-pink-500" />
+                <span>浙江珍琦护理用品有限公司</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-gray-600">
                 <Phone className="w-4 h-4 text-pink-500" />
-                <span>400-888-8888</span>
+                <span>0571-63595008</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-gray-600">
+                <Phone className="w-4 h-4 text-pink-500" />
+                <span>客服热线：400-809-5280</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-gray-600">
+                <Mail className="w-4 h-4 text-pink-500" />
+                <span>shenchunming@hzzhenqi.com.cn</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-gray-600">
                 <MapPin className="w-4 h-4 text-pink-500" />
-                <span>上海市浦东新区</span>
+                <span>浙江省杭州市富阳区场口镇盘龙山路6号</span>
               </div>
             </div>
           </div>
