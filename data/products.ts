@@ -21,16 +21,16 @@ export const collections: Collection[] = [
 export const products: Product[] = [
   {
     id: 'prod_001',
-    title: '云朵安睡裤 - 日用型',
+    title: '珍琦安睡裤 - 日用型',
     handle: 'cloud-sleep-pants-day',
-    description: '超薄透气，360°全方位防漏。采用亲肤棉柔表层，敏感肌也能安心使用。立体护围设计，翻身也不怕侧漏。',
-    descriptionHtml: '<p>超薄透气，360°全方位防漏。采用亲肤棉柔表层，敏感肌也能安心使用。立体护围设计，翻身也不怕侧漏。</p><ul><li>360°全方位防漏</li><li>超薄透气设计</li><li>亲肤棉柔表层</li><li>立体护围防侧漏</li></ul>',
+    description: '浙江珍琦护理用品出品，超薄透气，360°全方位防漏。采用医用级亲肤棉柔表层，敏感肌也能安心使用。立体护围设计，翻身也不怕侧漏。',
+    descriptionHtml: '<p>浙江珍琦护理用品出品，超薄透气，360°全方位防漏。采用医用级亲肤棉柔表层，敏感肌也能安心使用。立体护围设计，翻身也不怕侧漏。</p><ul><li>360°全方位防漏</li><li>超薄透气设计</li><li>医用级亲肤棉柔表层</li><li>立体护围防侧漏</li></ul>',
     price: 29.9,
     compareAtPrice: 39.9,
     images: [
-      { url: 'https://placehold.co/600x600/fbcfe8/831843?text=安睡裤-日用', altText: '云朵安睡裤日用型' },
-      { url: 'https://placehold.co/600x600/fce7f3/be185d?text=产品细节1', altText: '产品细节展示' },
-      { url: 'https://placehold.co/600x600/fdf2f8/9d174d?text=产品细节2', altText: '包装展示' },
+      { url: '/images/pants-day-1.jpg', altText: '珍琦安睡裤日用型' },
+      { url: '/images/pants-day-2.jpg', altText: '产品细节展示' },
+      { url: '/images/pants-day-3.jpg', altText: '包装展示' },
     ],
     variants: [
       { id: 'var_001_s', title: 'S码(45-55kg)', price: 29.9, availableForSale: true, quantityAvailable: 100 },

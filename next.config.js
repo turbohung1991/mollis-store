@@ -14,6 +14,15 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'placehold.co',
       },
+      // 添加你的 CDN 域名
+      {
+        protocol: 'https',
+        hostname: '*.alicdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.amazonaws.com',
+      },
     ],
   },
 }
