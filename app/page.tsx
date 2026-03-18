@@ -20,9 +20,9 @@ export default function HomePage() {
             className="object-cover"
             priority
           />
-          {/* 渐变遮罩 - 左侧深色以便文字可读 */}
-          <div className="absolute inset-0 bg-gradient-to-r from-pink-900/90 via-pink-800/70 to-pink-600/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
+          {/* 渐变遮罩 - 降低透明度让背景更清晰 */}
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-900/70 via-pink-800/50 to-pink-600/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
@@ -32,11 +32,11 @@ export default function HomePage() {
                 <Heart className="w-4 h-4" />
                 <span>专注女性健康护理</span>
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold leading-tight drop-shadow-lg">
                 舒适护理
                 <span className="block text-pink-200">安心每一天</span>
               </h1>
-              <p className="text-lg text-white/90 max-w-lg">
+              <p className="text-lg text-white max-w-lg drop-shadow-md">
                 高品质卫生护理产品，安睡裤、卫生巾等专业护理用品。
                 让每一位女性在特殊时期都能感受到舒适与安心。
               </p>
@@ -50,7 +50,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/products?category=pants"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 text-white font-semibold rounded-full border-2 border-white/30 hover:bg-white/20 transition-colors backdrop-blur-sm"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-white/20 text-white font-semibold rounded-full border-2 border-white/40 hover:bg-white/30 transition-colors backdrop-blur-sm"
                 >
                   了解安睡裤
                 </Link>
@@ -64,14 +64,14 @@ export default function HomePage() {
                       <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <span className="text-white/80">4.9/5 (12,000+ 好评)</span>
+                  <span className="text-white drop-shadow-md">4.9/5 (12,000+ 好评)</span>
                 </div>
               </div>
             </div>
             
             {/* 右侧展示 */}
             <div className="relative hidden lg:block">
-              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
+              <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/30">
                 <Image
                   src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80"
                   alt="自信女性"
@@ -80,7 +80,7 @@ export default function HomePage() {
                 />
               </div>
               {/* 浮动卡片 */}
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl">
+              <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
                     <Shield className="w-6 h-6 text-pink-600" />
@@ -106,7 +106,7 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-white/90" />
+          <div className="absolute inset-0 bg-white/70" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -156,7 +156,7 @@ export default function HomePage() {
                 由女性设计，<br />
                 <span className="text-pink-600">为女性而生</span>
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-gray-700">
                 我们深知每位女性都值得在特殊时期感到舒适与自信。
                 我们的产品采用优质材料与创新技术，精心打造。
               </p>
@@ -171,7 +171,7 @@ export default function HomePage() {
                     <div className="w-6 h-6 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Check className="w-4 h-4 text-pink-600" />
                     </div>
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-gray-800">{item}</span>
                   </div>
                 ))}
               </div>
@@ -196,36 +196,36 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-white via-white/95 to-white/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/85 to-white/80" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm shadow-lg border border-white/50">
+            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/70 backdrop-blur-md shadow-lg border border-white/60">
               <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center flex-shrink-0">
                 <Shield className="w-6 h-6 text-pink-600" />
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">安全认证</h3>
-                <p className="text-sm text-gray-600">通过多项国际安全认证，无荧光剂，敏感肌适用</p>
+                <p className="text-sm text-gray-700">通过多项国际安全认证，无荧光剂，敏感肌适用</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm shadow-lg border border-white/50">
+            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/70 backdrop-blur-md shadow-lg border border-white/60">
               <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center flex-shrink-0">
                 <Truck className="w-6 h-6 text-pink-600" />
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">隐私配送</h3>
-                <p className="text-sm text-gray-600">保密包装，快速送达，全程物流追踪</p>
+                <p className="text-sm text-gray-700">保密包装，快速送达，全程物流追踪</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm shadow-lg border border-white/50">
+            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/70 backdrop-blur-md shadow-lg border border-white/60">
               <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center flex-shrink-0">
                 <Clock className="w-6 h-6 text-pink-600" />
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">无忧售后</h3>
-                <p className="text-sm text-gray-600">7天无理由退换，专业客服在线解答</p>
+                <p className="text-sm text-gray-700">7天无理由退换，专业客服在线解答</p>
               </div>
             </div>
           </div>
@@ -241,14 +241,14 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-50/95 via-gray-50/90 to-gray-50/95" />
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-50/85 via-gray-50/80 to-gray-50/85" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-12">
             <div>
               <h2 className="text-3xl font-bold text-gray-900">热门产品</h2>
-              <p className="text-gray-600 mt-2">精选优质护理产品，给您贴心呵护</p>
+              <p className="text-gray-700 mt-2">精选优质护理产品，给您贴心呵护</p>
             </div>
             <Link
               href="/products"
@@ -275,7 +275,7 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-pink-50/95 via-pink-50/90 to-pink-50/95" />
+          <div className="absolute inset-0 bg-gradient-to-b from-pink-50/85 via-pink-50/80 to-pink-50/85" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -304,7 +304,7 @@ export default function HomePage() {
                 text: '品质 amazing，客服服务一流。已经推荐给所有朋友了！'
               }
             ].map((review, index) => (
-              <div key={index} className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-white/50">
+              <div key={index} className="bg-white/75 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/60">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="relative w-12 h-12 rounded-full overflow-hidden">
                     <Image
@@ -316,7 +316,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">{review.name}</h4>
-                    <p className="text-sm text-gray-500">{review.location}</p>
+                    <p className="text-sm text-gray-600">{review.location}</p>
                   </div>
                 </div>
                 <div className="flex mb-3">
@@ -324,7 +324,7 @@ export default function HomePage() {
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-gray-600">{review.text}</p>
+                <p className="text-gray-700">{review.text}</p>
               </div>
             ))}
           </div>
@@ -340,7 +340,7 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-white/90" />
+          <div className="absolute inset-0 bg-white/75" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -353,7 +353,7 @@ export default function HomePage() {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
                 <h3 className="text-2xl font-bold text-white mb-2">安睡裤系列</h3>
                 <p className="text-white/90">360度全方位防漏，整夜安心睡眠</p>
@@ -366,7 +366,7 @@ export default function HomePage() {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
                 <h3 className="text-2xl font-bold text-white mb-2">卫生巾系列</h3>
                 <p className="text-white/90">纯棉亲肤，轻薄透气</p>
