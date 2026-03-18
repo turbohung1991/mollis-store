@@ -20,9 +20,9 @@ export default function HomePage() {
             className="object-cover"
             priority
           />
-          {/* 渐变遮罩 - 降低透明度让背景更清晰 */}
-          <div className="absolute inset-0 bg-gradient-to-r from-pink-900/70 via-pink-800/50 to-pink-600/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent" />
+          {/* 渐变遮罩 - 进一步降低透明度让背景更清晰 */}
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-900/50 via-pink-800/35 to-pink-600/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
@@ -106,7 +106,7 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-white/70" />
+          <div className="absolute inset-0 bg-white/50" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -156,7 +156,7 @@ export default function HomePage() {
                 由女性设计，<br />
                 <span className="text-pink-600">为女性而生</span>
               </h2>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-800">
                 我们深知每位女性都值得在特殊时期感到舒适与自信。
                 我们的产品采用优质材料与创新技术，精心打造。
               </p>
@@ -196,12 +196,12 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/85 to-white/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/75 to-white/70" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/70 backdrop-blur-md shadow-lg border border-white/60">
+            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/60 backdrop-blur-md shadow-lg border border-white/50">
               <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center flex-shrink-0">
                 <Shield className="w-6 h-6 text-pink-600" />
               </div>
@@ -210,7 +210,7 @@ export default function HomePage() {
                 <p className="text-sm text-gray-700">通过多项国际安全认证，无荧光剂，敏感肌适用</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/70 backdrop-blur-md shadow-lg border border-white/60">
+            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/60 backdrop-blur-md shadow-lg border border-white/50">
               <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center flex-shrink-0">
                 <Truck className="w-6 h-6 text-pink-600" />
               </div>
@@ -219,7 +219,7 @@ export default function HomePage() {
                 <p className="text-sm text-gray-700">保密包装，快速送达，全程物流追踪</p>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/70 backdrop-blur-md shadow-lg border border-white/60">
+            <div className="flex items-start gap-4 p-6 rounded-2xl bg-white/60 backdrop-blur-md shadow-lg border border-white/50">
               <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center flex-shrink-0">
                 <Clock className="w-6 h-6 text-pink-600" />
               </div>
@@ -241,7 +241,7 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-50/85 via-gray-50/80 to-gray-50/85" />
+          <div className="absolute inset-0 bg-gradient-to-b from-gray-50/75 via-gray-50/70 to-gray-50/75" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -275,7 +275,7 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-pink-50/85 via-pink-50/80 to-pink-50/85" />
+          <div className="absolute inset-0 bg-gradient-to-b from-pink-50/75 via-pink-50/70 to-pink-50/75" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -304,7 +304,7 @@ export default function HomePage() {
                 text: '品质 amazing，客服服务一流。已经推荐给所有朋友了！'
               }
             ].map((review, index) => (
-              <div key={index} className="bg-white/75 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/60">
+              <div key={index} className="bg-white/65 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/50">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="relative w-12 h-12 rounded-full overflow-hidden">
                     <Image
@@ -340,7 +340,7 @@ export default function HomePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-white/75" />
+          <div className="absolute inset-0 bg-white/60" />
         </div>
         
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -353,7 +353,7 @@ export default function HomePage() {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/15 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
                 <h3 className="text-2xl font-bold text-white mb-2">安睡裤系列</h3>
                 <p className="text-white/90">360度全方位防漏，整夜安心睡眠</p>
@@ -366,7 +366,7 @@ export default function HomePage() {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/15 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
                 <h3 className="text-2xl font-bold text-white mb-2">卫生巾系列</h3>
                 <p className="text-white/90">纯棉亲肤，轻薄透气</p>
